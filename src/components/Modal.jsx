@@ -10,7 +10,5 @@ const Modal = () => {
             <button className="post-btn close-btn">Close</button>
             <button className="post-btn close-btn">Ok</button>
         </div>
-        
     )
-
 }

@@ -64,6 +64,7 @@ input[name="nav-input"]{
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
+    min-height: 100vh;
 }
 .right-aside{
     width: 23%;
@@ -128,7 +129,7 @@ input[name="nav-input"]{
     align-items: center;
     border: 1px solid;
     flex-direction: column;
-    height: 31.3%;
+    height: 32%;
     padding: 1.5rem 1rem;
 }
 .feed-container{
