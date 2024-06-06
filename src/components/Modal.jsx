@@ -4,15 +4,15 @@ const Modal = ({ closeModal, bgColor }) => {
     const style = {
         backgroundColor: bgColor,
     }
-    
+
     return (
         <div className="modal-background">
         <div className="modal-container" style={style}>
-            <h2 className="head-modal">Title</h2>
-            <p className="message">Add some message</p>
+            <h2 className="head-modal">TITLE</h2>
+            <p className="message">ADD SOME MESSAGE</p>
             <div className="action-btn">
-            <button className="post-btn close-btn" onClick= {() => closeModal(false)}>Close</button>
-            <button className="post-btn close-btn">Ok</button>
+            <button className="post-btn close-btn" onClick= {() => closeModal(false)}>CLOSE</button>
+            <button className="post-btn close-btn">OK</button>
             </div>
         </div>
         </div>
