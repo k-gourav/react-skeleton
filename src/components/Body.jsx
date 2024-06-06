@@ -1,5 +1,4 @@
 import LeftAside from "./LeftAside";
-import LeftAsideContent from "./LeftAsideContent";
 import RightAside from "./RightAside";
 import Main from "./Main";
 

@@ -1,10 +1,13 @@
 import { useState } from "react";
 import Button from "./Button";
+import Modal from "./Modal.jsx";
+import '../style.css';
 
 const Main = () => {
   const [modalOpen, setModalOpen] = useState(false);
-
-  
+  const openPop = () => {
+    setModalOpen(true)
+  }
 
   return (
     <div className="main-container">
@@ -16,8 +19,9 @@ const Main = () => {
           name="post"
           id="post"
         />
-        <button className="post-btn" onClick={() => setModalOpen(true)}>Btn</button>
+        <button className="post-btn" onClick={openPop}>Btn</button>
       </div>
+      {modalOpen && <Modal closeModal={setModalOpen} bgColor="rgb(158, 233, 158)" />}
 
       <div className="feed-container">
         <div className="img">

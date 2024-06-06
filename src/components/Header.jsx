@@ -6,6 +6,8 @@ const Header = () => {
             <div className="header-element">
                 <div className="header-input">
                     <input type="text" name="nav-input" placeholder="Input"/>
+                    <a href="">HOME</a>
+                    <a href="">ABOUT</a>
                 </div>
                 <div className="nav-logo">
                     <nav className="nav-items">
