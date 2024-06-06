@@ -1,9 +1,9 @@
 import React from "react";
 
-const LeftAsideContent = () => {
+const LeftAsideContent = ({asideText}) => {
     return (
         <div className="left-aside-content">
-            <p className="left-aside-text">Aside</p>
+            <p className="left-aside-text">{asideText ? asideText : "aside"}</p>
         </div>
 
         

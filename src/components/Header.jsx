@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Header = () => {
+const Header = ({ handleInputText }) => {
+    const output = (event) => {
+        handleInputText(event.target.value)
+    }
+
     return (
         <header>
             <div className="header-element">
                 <div className="header-input">
-                    <input type="text" name="nav-input" placeholder="Input"/>
+                    <input type="text" name="nav-input" placeholder="Input" onChange={output} />
                     <a href="">HOME</a>
                     <a href="">ABOUT</a>
                 </div>

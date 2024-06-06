@@ -1,18 +1,15 @@
 import Header from './components/Header.jsx'
 import Body from './components/Body.jsx'
+import { useState } from 'react'
 
 function App() {
-  const [text, setText] = useState('');
+  const [inputText, setInputText] = useState('')
 
-  const handleTextChange = (newText) => {
-    setText(newText);
-  };
-  
   return (
     <>
-    <Header/>
-    <Body/>
-
+    <Header handleInputText={setInputText}/>
+    <Body asideText={inputText} />
+    {/* {isAbout && <About />} */}
     </>
   )
 }

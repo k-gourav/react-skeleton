@@ -3,16 +3,16 @@ import Main from "./Main";
 import { useState } from "react";
 import Modal from "./Modal";
 
-  const LeftAside = () => {
+  const LeftAside = ({ asideText }) => {
 
   const [modalOpen, setModalOpen] = useState(false);
   const openPop = () => {
-    console.log('Hi')
     setModalOpen(true)
   }
+  
   return (
     <div className="left-aside">
-      <LeftAsideContent />
+      <LeftAsideContent asideText={asideText} />
       <LeftAsideContent />
       <div className="left-aside-content">
         <button className="aside-btn" onClick={openPop}>Btn</button>
