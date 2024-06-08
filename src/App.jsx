@@ -9,7 +9,6 @@ function App() {
     <>
     <Header handleInputText={setInputText}/>
     <Body asideText={inputText} />
-    {/* {isAbout && <About />} */}
     </>
   )
 }

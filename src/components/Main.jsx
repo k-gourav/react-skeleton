@@ -3,10 +3,16 @@ import Button from "./Button";
 import Modal from "./Modal.jsx";
 import '../style.css';
 
-const Main = () => {
+const Main = ( {handleRightText, handleCenterText, clickPost} ) => {
   const [modalOpen, setModalOpen] = useState(false);
   const openPop = () => {
     setModalOpen(true)
+  }
+  const addMainText = (e) => {
+    handleRightText(e.target.value)
+  }
+  const centerText = (e) => {
+    handleCenterText(e.target.value)
   }
 
   return (
@@ -18,6 +24,7 @@ const Main = () => {
           placeholder="Input"
           name="post"
           id="post"
+          onChange={centerText}
         />
         <button className="post-btn" onClick={openPop}>Btn</button>
       </div>
@@ -39,6 +46,7 @@ const Main = () => {
           type="text"
           placeholder="Input"
           name="post"
+          onChange={addMainText}
         />
       </div>
     </div>
